@@ -21,7 +21,7 @@
                 </div>
 
                 <h1 class="hero-title">
-                    Mastering The <span class="text-brand-primary">Ultimate Softness</span> In Every Pull.
+                    Mastering The <span class="text-gradient-shimmer">Ultimate Softness</span> In Every Pull.
                 </h1>
 
                 <p class="hero-subtitle">
@@ -54,9 +54,18 @@
                 </div>
             </div>
 
-            <!-- Right Hero Visual -->
+            <!-- Right Hero Visual with Halo & Floating Chips -->
             <div class="col-lg-6 anim-fade-left">
                 <div class="hero-image-wrap text-center">
+                    <div class="hero-glow-halo"></div>
+                    <div class="floating-chip floating-chip-top d-none d-sm-inline-flex">
+                        <i class="bi bi-shield-check text-success fs-5"></i>
+                        <span>100% Virgin Pulp</span>
+                    </div>
+                    <div class="floating-chip floating-chip-bottom d-none d-sm-inline-flex">
+                        <i class="bi bi-feather text-brand-primary fs-5"></i>
+                        <span>3-Ply CloudSoft</span>
+                    </div>
                     <img src="{{ asset('images/hero-tissue-illustration.svg') }}" alt="Aiira Luxury Facial Tissue Box" class="img-fluid" style="max-height: 520px;">
                 </div>
             </div>

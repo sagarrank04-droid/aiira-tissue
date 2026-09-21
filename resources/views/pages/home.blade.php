@@ -15,13 +15,13 @@
     <div class="container position-relative" style="z-index: 2;">
         <div class="row align-items-center g-5">
             <!-- Left Hero Text -->
-            <div class="col-lg-6 anim-fade-right">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
                 <div class="badge bg-brand-light text-brand-primary border px-3 py-2 rounded-pill fw-bold mb-3 pulse-badge">
                     <i class="bi bi-patch-check-fill text-brand-secondary"></i> Direct Manufacturer &amp; Wholesale Supplier
                 </div>
 
                 <h1 class="hero-title">
-                    Mastering The <span class="text-gradient-shimmer">Ultimate Softness</span> In Every Pull.
+                    Mastering The <span class="text-brand-primary">Ultimate Softness</span> In Every Pull.
                 </h1>
 
                 <p class="hero-subtitle">
@@ -39,33 +39,24 @@
 
                 <!-- Trust Badges Under Hero -->
                 <div class="row g-3 pt-3 border-top border-light">
-                    <div class="col-auto d-flex align-items-center gap-2 anim-fade-up anim-delay-1">
+                    <div class="col-auto d-flex align-items-center gap-2" data-aos="fade-up" data-aos-delay="200">
                         <i class="bi bi-check-circle-fill text-brand-secondary fs-5"></i>
                         <span class="small fw-semibold">100% Virgin Wood Pulp</span>
                     </div>
-                    <div class="col-auto d-flex align-items-center gap-2 anim-fade-up anim-delay-2">
+                    <div class="col-auto d-flex align-items-center gap-2" data-aos="fade-up" data-aos-delay="300">
                         <i class="bi bi-check-circle-fill text-brand-secondary fs-5"></i>
                         <span class="small fw-semibold">No Optical Brighteners (OBF Free)</span>
                     </div>
-                    <div class="col-auto d-flex align-items-center gap-2 anim-fade-up anim-delay-3">
+                    <div class="col-auto d-flex align-items-center gap-2" data-aos="fade-up" data-aos-delay="400">
                         <i class="bi bi-check-circle-fill text-brand-secondary fs-5"></i>
                         <span class="small fw-semibold">Daily High Capacity Plant</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Hero Visual with Halo & Floating Chips -->
-            <div class="col-lg-6 anim-fade-left">
+            <!-- Right Hero Visual -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
                 <div class="hero-image-wrap text-center">
-                    <div class="hero-glow-halo"></div>
-                    <div class="floating-chip floating-chip-top d-none d-sm-inline-flex">
-                        <i class="bi bi-shield-check text-success fs-5"></i>
-                        <span>100% Virgin Pulp</span>
-                    </div>
-                    <div class="floating-chip floating-chip-bottom d-none d-sm-inline-flex">
-                        <i class="bi bi-feather text-brand-primary fs-5"></i>
-                        <span>3-Ply CloudSoft</span>
-                    </div>
                     <img src="{{ asset('images/hero-tissue-illustration.svg') }}" alt="Aiira Luxury Facial Tissue Box" class="img-fluid" style="max-height: 520px;">
                 </div>
             </div>
@@ -76,9 +67,9 @@
 <!-- =========================================================================
      PRODUCT ANATOMY & QUALITY HIGHLIGHTS
      ========================================================================= -->
-<section class="py-5 bg-white border-bottom reveal-on-scroll">
+<section class="py-5 bg-white border-bottom">
     <div class="container py-4">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Precision Engineering</span>
             <h2 class="section-title">Anatomy of the Aiira Tissue Box</h2>
             <p class="section-subtitle">Because we specialize exclusively in facial tissue boxes, every detail is engineered to world-class standards.</p>
@@ -86,7 +77,7 @@
 
         <div class="row g-4">
             <!-- Feature 1 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <i class="bi bi-feather"></i>
@@ -97,7 +88,7 @@
             </div>
 
             <!-- Feature 2 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <i class="bi bi-arrows-vertical"></i>
@@ -108,7 +99,7 @@
             </div>
 
             <!-- Feature 3 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <i class="bi bi-shield-check"></i>
@@ -119,7 +110,7 @@
             </div>
 
             <!-- Feature 4 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="feature-card">
                     <div class="feature-icon-wrap">
                         <i class="bi bi-box2"></i>
@@ -135,9 +126,9 @@
 <!-- =========================================================================
      PRODUCT PACKAGING & SUPPLY VARIANTS
      ========================================================================= -->
-<section class="py-5 bg-brand-light reveal-on-scroll">
+<section class="py-5 bg-brand-light">
     <div class="container py-4">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Wholesale &amp; Retail Packs</span>
             <h2 class="section-title">Available Packaging Configurations</h2>
             <p class="section-subtitle">Choose from standard retail configurations or order bulk Master Cartons with custom private labeling.</p>
@@ -145,7 +136,7 @@
 
         <div class="row g-4">
             @foreach($product['variants'] as $index => $variant)
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="{{ 100 * ($index + 1) }}">
                     <div class="product-card h-100">
                         <div class="product-img-box">
                             <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="{{ $variant['name'] }}" class="img-fluid">
@@ -179,13 +170,13 @@
 <!-- =========================================================================
      WHY OUR SPECIALIZED MANUFACTURING GIVES YOU AN EDGE
      ========================================================================= -->
-<section class="py-5 bg-white overflow-hidden reveal-on-scroll">
+<section class="py-5 bg-white overflow-hidden">
     <div class="container py-4">
         <div class="row align-items-center g-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
                 <div class="position-relative">
                     <img src="{{ asset('images/factory-plant.jpg') }}" alt="Aiira Automated Manufacturing Plant" class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;">
-                    <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg d-none d-sm-flex align-items-center gap-3 m-3 border">
+                    <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg d-none d-sm-flex align-items-center gap-3 m-3 border" data-aos="zoom-in" data-aos-delay="300">
                         <i class="bi bi-lightning-charge-fill fs-1 text-warning"></i>
                         <div>
                             <h6 class="fw-bold mb-0">High-Speed Converting</h6>
@@ -195,14 +186,14 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
                 <h2 class="section-title">Why Single-Product Focus Delivers Unbeatable Quality &amp; Pricing</h2>
                 <p class="text-muted mb-4" style="line-height: 1.8;">
                     Unlike generalized paper converters who divide focus across dozens of products, <strong>Aiira dedicates 100% of its machinery, engineers, and supply chain to perfect one item: The Facial Tissue Box.</strong>
                 </p>
 
                 <div class="d-flex flex-column gap-3 mb-4">
-                    <div class="d-flex align-items-start gap-3">
+                    <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="contact-icon-circle bg-light text-brand-primary" style="width:42px; height:42px; min-width:42px;">
                             <i class="bi bi-currency-rupee"></i>
                         </div>
@@ -212,7 +203,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-start gap-3">
+                    <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
                         <div class="contact-icon-circle bg-light text-brand-primary" style="width:42px; height:42px; min-width:42px;">
                             <i class="bi bi-hand-thumbs-up"></i>
                         </div>
@@ -222,7 +213,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-start gap-3">
+                    <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="300">
                         <div class="contact-icon-circle bg-light text-brand-primary" style="width:42px; height:42px; min-width:42px;">
                             <i class="bi bi-brush"></i>
                         </div>
@@ -249,30 +240,30 @@
 <!-- =========================================================================
      LIVE FACTORY PRODUCTION STATS
      ========================================================================= -->
-<section class="py-5 bg-dark-gradient text-white reveal-on-scroll">
+<section class="py-5 bg-dark-gradient text-white">
     <div class="container py-3">
         <div class="row g-4 text-center">
-            <div class="col-6 col-lg-3">
-                <div class="p-3 stat-card bg-transparent border-0 text-white">
-                    <div class="stat-number text-brand-secondary" data-target="50000" data-suffix="+">50,000+</div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-3">
+                    <div class="stat-number text-brand-secondary" data-target="50000" data-suffix="+">0</div>
                     <div class="text-white-50 fw-semibold">Boxes Produced Daily</div>
                 </div>
             </div>
-            <div class="col-6 col-lg-3">
-                <div class="p-3 stat-card bg-transparent border-0 text-white">
-                    <div class="stat-number text-brand-secondary" data-target="100" data-suffix="%">100%</div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-3">
+                    <div class="stat-number text-brand-secondary" data-target="100" data-suffix="%">0</div>
                     <div class="text-white-50 fw-semibold">Pure Virgin Pulp Grade</div>
                 </div>
             </div>
-            <div class="col-6 col-lg-3">
-                <div class="p-3 stat-card bg-transparent border-0 text-white">
-                    <div class="stat-number text-brand-secondary" data-target="24" data-suffix="/7">24/7</div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-3">
+                    <div class="stat-number text-brand-secondary" data-target="24" data-suffix="/7">0</div>
                     <div class="text-white-50 fw-semibold">Automated Production Lines</div>
                 </div>
             </div>
-            <div class="col-6 col-lg-3">
-                <div class="p-3 stat-card bg-transparent border-0 text-white">
-                    <div class="stat-number text-brand-secondary" data-target="1500" data-suffix="+">1,500+</div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="p-3">
+                    <div class="stat-number text-brand-secondary" data-target="1500" data-suffix="+">0</div>
                     <div class="text-white-50 fw-semibold">Wholesale &amp; Retail Partners</div>
                 </div>
             </div>
@@ -283,8 +274,8 @@
 <!-- =========================================================================
      FACTORY DIRECT QUOTATION CTA
      ========================================================================= -->
-<section class="py-5 bg-white reveal-on-scroll">
-    <div class="container py-3">
+<section class="py-5 bg-white">
+    <div class="container py-3" data-aos="zoom-in" data-aos-duration="800">
         <div class="p-5 rounded-5 bg-brand-primary text-white position-relative overflow-hidden shadow-lg">
             <div class="hero-orb hero-orb-1" style="opacity: 0.25;"></div>
             <div class="row align-items-center position-relative" style="z-index: 2;">

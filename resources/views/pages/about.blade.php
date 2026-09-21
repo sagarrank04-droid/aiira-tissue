@@ -48,9 +48,9 @@
             </div>
 
             <div class="col-lg-6">
-                <div class="p-4 bg-light rounded-5 shadow-sm text-center">
-                    <img src="{{ asset('images/about-factory.svg') }}" alt="Aiira Plant" class="img-fluid rounded-4 mb-4">
-                    <div class="row text-center g-2">
+                <div class="p-3 bg-white rounded-5 shadow-md border text-center">
+                    <img src="{{ asset('images/factory-plant.jpg') }}" alt="Aiira High-Tech Plant" class="img-fluid rounded-4 mb-4" style="width: 100%; max-height: 380px; object-fit: cover;">
+                    <div class="row text-center g-2 pt-2">
                         <div class="col-4 border-end">
                             <h4 class="fw-bold text-brand-primary mb-0">50,000+</h4>
                             <small class="text-muted">Boxes / Day</small>

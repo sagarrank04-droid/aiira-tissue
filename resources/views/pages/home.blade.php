@@ -165,7 +165,7 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <div class="position-relative">
-                    <img src="{{ asset('images/about-factory.svg') }}" alt="Aiira Manufacturing Plant" class="img-fluid rounded-4 shadow-md">
+                    <img src="{{ asset('images/factory-plant.jpg') }}" alt="Aiira Automated Manufacturing Plant" class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;">
                     <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow-lg d-none d-sm-flex align-items-center gap-3 m-3 border">
                         <i class="bi bi-lightning-charge-fill fs-1 text-warning"></i>
                         <div>

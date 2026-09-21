@@ -23,10 +23,10 @@
 <!-- =========================================================================
      COMPANY STORY & SPECIALIZED PHILOSOPHY
      ========================================================================= -->
-<section class="py-5 bg-white">
+<section class="py-5 bg-white reveal-on-scroll">
     <div class="container py-4">
         <div class="row align-items-center g-5">
-            <div class="col-lg-6 anim-fade-right">
+            <div class="col-lg-6">
                 <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Our Core Mission</span>
                 <h2 class="section-title mb-3">Why We Chose to Master Only ONE Product</h2>
                 <p class="text-muted mb-3" style="line-height: 1.8;">
@@ -37,13 +37,13 @@
                 </p>
 
                 <div class="row g-3">
-                    <div class="col-sm-6 anim-fade-up anim-delay-1">
+                    <div class="col-sm-6">
                         <div class="p-3 bg-brand-light rounded-4 border border-info-subtle h-100 feature-card">
                             <h5 class="fw-bold text-brand-primary mb-1">Precision Machinery</h5>
                             <p class="small text-muted mb-0">Custom-calibrated automatic V-fold interleaving lines tuned exclusively for high-grade 3-ply virgin facial tissues.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 anim-fade-up anim-delay-2">
+                    <div class="col-sm-6">
                         <div class="p-3 bg-brand-light rounded-4 border border-info-subtle h-100 feature-card">
                             <h5 class="fw-bold text-brand-primary mb-1">Direct Factory Value</h5>
                             <p class="small text-muted mb-0">High-volume single-product efficiency allows us to offer premium virgin quality at direct manufacturer prices.</p>
@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 anim-fade-left">
+            <div class="col-lg-6">
                 <div class="p-3 bg-white rounded-5 shadow-md border text-center">
                     <img src="{{ asset('images/factory-plant.jpg') }}" alt="Aiira High-Tech Plant" class="img-fluid rounded-4 mb-4" style="width: 100%; max-height: 380px; object-fit: cover;">
                     <div class="row text-center g-2 pt-2">
@@ -78,9 +78,9 @@
 <!-- =========================================================================
      MANUFACTURING PROCESS STEPS
      ========================================================================= -->
-<section class="py-5 bg-brand-light">
+<section class="py-5 bg-brand-light reveal-on-scroll">
     <div class="container py-4">
-        <div class="text-center mb-5 anim-fade-up">
+        <div class="text-center mb-5">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">From Pulp to Box</span>
             <h2 class="section-title">Our Touchless Automated Process</h2>
             <p class="section-subtitle">From jumbo raw reels of certified virgin pulp to the finished shrink-wrapped master cartons.</p>
@@ -88,7 +88,7 @@
 
         <div class="row g-4">
             <!-- Step 1 -->
-            <div class="col-md-6 col-lg-3 anim-fade-up anim-delay-1">
+            <div class="col-md-6 col-lg-3">
                 <div class="feature-card text-center">
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-disc"></i>
@@ -99,7 +99,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="col-md-6 col-lg-3 anim-fade-up anim-delay-2">
+            <div class="col-md-6 col-lg-3">
                 <div class="feature-card text-center">
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-layers"></i>
@@ -110,7 +110,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="col-md-6 col-lg-3 anim-fade-up anim-delay-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="feature-card text-center">
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-arrows-vertical"></i>
@@ -121,7 +121,7 @@
             </div>
 
             <!-- Step 4 -->
-            <div class="col-md-6 col-lg-3 anim-fade-up anim-delay-4">
+            <div class="col-md-6 col-lg-3">
                 <div class="feature-card text-center">
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-box-seam"></i>
@@ -137,37 +137,37 @@
 <!-- =========================================================================
      CERTIFICATIONS SECTION
      ========================================================================= -->
-<section id="certifications" class="py-5 bg-white">
+<section id="certifications" class="py-5 bg-white reveal-on-scroll">
     <div class="container py-4">
-        <div class="text-center mb-5 anim-fade-up">
+        <div class="text-center mb-5">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Quality Assurance</span>
             <h2 class="section-title">Certifications &amp; Quality Lab Testing</h2>
             <p class="section-subtitle">Our in-house QA lab verifies every production batch against stringent physical and hygienic parameters.</p>
         </div>
 
         <div class="row g-4 text-center mb-5">
-            <div class="col-6 col-md-3 anim-zoom-in anim-delay-1">
+            <div class="col-6 col-md-3">
                 <div class="stat-card h-100">
                     <i class="bi bi-patch-check-fill fs-1 text-brand-primary mb-2 d-block"></i>
                     <h5 class="fw-bold mb-1">ISO 9001:2015</h5>
                     <p class="small text-muted mb-0">Certified Quality Management</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 anim-zoom-in anim-delay-2">
+            <div class="col-6 col-md-3">
                 <div class="stat-card h-100">
                     <i class="bi bi-tree-fill fs-1 text-success mb-2 d-block"></i>
                     <h5 class="fw-bold mb-1">FSC Certified</h5>
                     <p class="small text-muted mb-0">100% Sustainable Pulp</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 anim-zoom-in anim-delay-3">
+            <div class="col-6 col-md-3">
                 <div class="stat-card h-100">
                     <i class="bi bi-shield-shaded fs-1 text-info mb-2 d-block"></i>
                     <h5 class="fw-bold mb-1">Dermatologist Safe</h5>
                     <p class="small text-muted mb-0">Hypoallergenic &amp; Gentle</p>
                 </div>
             </div>
-            <div class="col-6 col-md-3 anim-zoom-in anim-delay-4">
+            <div class="col-6 col-md-3">
                 <div class="stat-card h-100">
                     <i class="bi bi-water fs-1 text-brand-secondary mb-2 d-block"></i>
                     <h5 class="fw-bold mb-1">ECF Standard</h5>
@@ -177,7 +177,7 @@
         </div>
 
         <!-- Plant Visit / Contact prompt -->
-        <div class="p-4 bg-brand-light rounded-4 text-center anim-fade-up">
+        <div class="p-4 bg-brand-light rounded-4 text-center">
             <h4 class="fw-bold text-brand-primary mb-2">Interested in a Factory Tour or Direct Dealership?</h4>
             <p class="text-muted small mb-3">We welcome wholesale buyers and corporate procurement directors to visit our manufacturing facilities.</p>
             <a href="{{ route('contact') }}" class="btn btn-aiira btn-shimmer">

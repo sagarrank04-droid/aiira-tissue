@@ -1,11 +1,30 @@
 /* ==========================================================================
    AIIRA TISSUE PAPERS - MAIN JAVASCRIPT
-   Interactivity, Animations, Product Filtering, and Form Enhancements
+   Smooth Native Animations, Scroll Reveals, Sticky Navbar, & Modal
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', function () {
   
-  // 1. Sticky Navbar on Scroll
+  // 1. Scroll-triggered Reveal Animations (Zero Dependencies)
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  }
+
+  // 2. Sticky Glassmorphic Navbar on Scroll
   const navbar = document.querySelector('.aiira-navbar');
   if (navbar) {
     window.addEventListener('scroll', function () {
@@ -17,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Scroll to Top Button
+  // 3. Floating Scroll To Top Button
   const scrollTopBtn = document.getElementById('scrollToTopBtn');
   if (scrollTopBtn) {
     window.addEventListener('scroll', function () {
-      if (window.scrollY > 350) {
+      if (window.scrollY > 300) {
         scrollTopBtn.classList.add('visible');
       } else {
         scrollTopBtn.classList.remove('visible');
@@ -65,22 +84,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 5. Counter Animation for Statistics (Smooth easing)
+  // 5. Smooth Counter Animation for Statistics
   const counters = document.querySelectorAll('.stat-number');
   if (counters.length > 0) {
-    const observer = new IntersectionObserver((entries, obs) => {
+    const counterObserver = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const counter = entry.target;
           const target = +counter.getAttribute('data-target');
           const suffix = counter.getAttribute('data-suffix') || '';
-          const duration = 1800; // ms
+          const duration = 1600;
           let startTimestamp = null;
 
           const step = (timestamp) => {
             if (!startTimestamp) startTimestamp = timestamp;
             const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-            // Ease out cubic
             const easeProgress = 1 - Math.pow(1 - progress, 3);
             const current = Math.floor(easeProgress * target);
             counter.innerText = current.toLocaleString() + suffix;
@@ -95,9 +113,9 @@ document.addEventListener('DOMContentLoaded', function () {
           obs.unobserve(counter);
         }
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.2 });
 
-    counters.forEach(counter => observer.observe(counter));
+    counters.forEach(counter => counterObserver.observe(counter));
   }
 
   // 6. Quick Product Inquiry Modal Data Binder
@@ -116,15 +134,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 7. Interactive Subtle Tilt on Hero Image (Desktop only)
+  // 7. Interactive 3D Subtle Tilt on Hero Image
   const heroImage = document.querySelector('.hero-image-wrap img');
-  if (heroImage && window.innerWidth > 992) {
-    const heroWrap = document.querySelector('.hero-image-wrap');
+  const heroWrap = document.querySelector('.hero-image-wrap');
+  if (heroImage && heroWrap && window.innerWidth > 992) {
     heroWrap.addEventListener('mousemove', function (e) {
       const rect = heroWrap.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      heroImage.style.transform = `perspective(1000px) rotateY(${x * 0.03}deg) rotateX(${-y * 0.03}deg) scale(1.03)`;
+      heroImage.style.transform = `perspective(1000px) rotateY(${x * 0.04}deg) rotateX(${-y * 0.04}deg) scale(1.03)`;
     });
 
     heroWrap.addEventListener('mouseleave', function () {

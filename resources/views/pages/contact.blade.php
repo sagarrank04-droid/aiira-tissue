@@ -23,11 +23,11 @@
 <!-- =========================================================================
      MAIN CONTACT SECTION (FORM + INFO)
      ========================================================================= -->
-<section class="py-5 bg-white">
+<section class="py-5 bg-white reveal-on-scroll">
     <div class="container py-4">
         <div class="row g-5">
             <!-- Left: Factory & Contact Details Card -->
-            <div class="col-lg-5 anim-fade-right">
+            <div class="col-lg-5">
                 <div class="contact-info-card">
                     <h3 class="fw-bold text-white mb-2">Manufacturing Headquarters</h3>
                     <p class="text-white-50 mb-4">Connect directly with our factory sales and dispatch team.</p>
@@ -97,7 +97,7 @@
             </div>
 
             <!-- Right: Quotation / Inquiry Form Card -->
-            <div class="col-lg-7 anim-fade-left">
+            <div class="col-lg-7">
                 <div class="contact-form-card">
                     <h3 class="fw-bold text-brand-primary-dark mb-1">Request Factory Quotation</h3>
                     <p class="text-muted mb-4">Fill out your order or dealership details for direct manufacturer rate quotes.</p>
@@ -185,15 +185,15 @@
 <!-- =========================================================================
      MANUFACTURING & PRODUCT FAQS
      ========================================================================= -->
-<section class="py-5 bg-brand-light border-top">
+<section class="py-5 bg-brand-light border-top reveal-on-scroll">
     <div class="container py-4">
-        <div class="text-center mb-5 anim-fade-up">
+        <div class="text-center mb-5">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Help &amp; Support</span>
             <h2 class="section-title">Frequently Asked Questions</h2>
             <p class="section-subtitle">Common queries from distributors, wholesale buyers, and hotel procurement managers.</p>
         </div>
 
-        <div class="row justify-content-center anim-fade-up anim-delay-1">
+        <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="accordion aiira-accordion" id="faqAccordion">
                     <!-- FAQ 1 -->

@@ -42,15 +42,15 @@
 <!-- =========================================================================
      TECHNICAL SPECIFICATIONS TABLE
      ========================================================================= -->
-<section class="py-5 bg-white">
+<section class="py-5 bg-white reveal-on-scroll">
     <div class="container py-4">
-        <div class="text-center mb-5 anim-fade-up">
+        <div class="text-center mb-5">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Laboratory Standards</span>
             <h2 class="section-title">Technical Specifications</h2>
             <p class="section-subtitle">Verified parameters tested in our in-house ISO certified quality control laboratory.</p>
         </div>
 
-        <div class="row justify-content-center anim-fade-up anim-delay-1">
+        <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="table-responsive bg-white rounded-4 shadow-sm border">
                     <table class="table table-hover align-middle mb-0">
@@ -113,9 +113,9 @@
 <!-- =========================================================================
      PACKAGING & SUPPLY VARIANTS
      ========================================================================= -->
-<section class="py-5 bg-brand-light">
+<section class="py-5 bg-brand-light reveal-on-scroll">
     <div class="container py-4">
-        <div class="text-center mb-5 anim-fade-up">
+        <div class="text-center mb-5">
             <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Standard &amp; Custom Sizes</span>
             <h2 class="section-title">Packaging Sizes &amp; Configurations</h2>
             <p class="section-subtitle">We supply all configurations directly from our factory floor to distributors, retailers, and institutions.</p>
@@ -123,7 +123,7 @@
 
         <div class="row g-4">
             @foreach($product['variants'] as $index => $variant)
-                <div class="col-md-6 col-lg-3 anim-fade-up anim-delay-{{ ($index % 4) + 1 }}">
+                <div class="col-md-6 col-lg-3">
                     <div class="product-card h-100">
                         <div class="product-img-box">
                             <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="{{ $variant['name'] }}" class="img-fluid">
@@ -157,10 +157,10 @@
 <!-- =========================================================================
      CUSTOM PRIVATE LABEL & OEM FOR CORPORATES / HOTELS
      ========================================================================= -->
-<section class="py-5 bg-white border-top overflow-hidden">
+<section class="py-5 bg-white border-top overflow-hidden reveal-on-scroll">
     <div class="container py-4">
         <div class="row align-items-center g-5">
-            <div class="col-lg-7 anim-fade-right">
+            <div class="col-lg-7">
                 <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Private Labeling</span>
                 <h2 class="section-title mb-3">Custom Branded Tissue Boxes with Your Logo</h2>
                 <p class="text-muted mb-4" style="line-height: 1.8;">
@@ -168,13 +168,13 @@
                 </p>
 
                 <div class="row g-3 mb-4">
-                    <div class="col-sm-6 anim-fade-up anim-delay-1">
+                    <div class="col-sm-6">
                         <div class="p-3 bg-light rounded-3 border feature-card">
                             <h6 class="fw-bold text-brand-primary mb-1"><i class="bi bi-palette text-brand-secondary me-2"></i> Custom Box Artwork</h6>
                             <p class="small text-muted mb-0">High-resolution offset multi-color printing with matte, gloss, or gold foil finish.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 anim-fade-up anim-delay-2">
+                    <div class="col-sm-6">
                         <div class="p-3 bg-light rounded-3 border feature-card">
                             <h6 class="fw-bold text-brand-primary mb-1"><i class="bi bi-sliders text-brand-secondary me-2"></i> Custom Sheet Counts</h6>
                             <p class="small text-muted mb-0">Choose between 50, 100, 150, or 200 pulls tailored to your budget &amp; usage.</p>
@@ -187,7 +187,7 @@
                 </button>
             </div>
 
-            <div class="col-lg-5 text-center anim-fade-left">
+            <div class="col-lg-5 text-center">
                 <div class="p-4 bg-brand-light rounded-4 border feature-card">
                     <i class="bi bi-truck fs-1 text-brand-primary mb-2 d-block"></i>
                     <h4 class="fw-bold mb-2">Direct Factory Dispatch</h4>

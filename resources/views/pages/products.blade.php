@@ -123,9 +123,9 @@
             @foreach($product['variants'] as $variant)
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card h-100">
-                        <div class="product-img-box" style="height: 200px;">
+                        <div class="product-img-box">
                             <span class="product-tag">{{ $variant['badge'] }}</span>
-                            <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="{{ $variant['name'] }}" class="img-fluid" style="max-height: 150px;">
+                            <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="{{ $variant['name'] }}" class="img-fluid">
                         </div>
                         <div class="product-body">
                             <span class="text-brand-secondary small fw-bold text-uppercase mb-1">{{ $variant['count'] }}</span>

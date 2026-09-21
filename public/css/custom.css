@@ -428,18 +428,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-img-box {
   background: #f3fafc;
-  padding: 24px;
+  padding: 35px 20px 20px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: 240px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .product-img-box img {
-  max-height: 190px;
+  max-height: 160px;
   width: auto;
   transition: var(--transition);
 }
@@ -450,15 +450,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-tag {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 14px;
+  left: 14px;
   background: var(--brand-primary);
   color: #ffffff;
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  padding: 4px 12px;
+  padding: 5px 12px;
   border-radius: var(--radius-full);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 88, 122, 0.2);
+  line-height: 1.2;
+  display: inline-block;
 }
 
 .product-body {

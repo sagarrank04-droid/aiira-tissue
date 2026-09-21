@@ -5,18 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   
-  // 1. Initialize AOS (Animate On Scroll)
-  if (typeof AOS !== 'undefined') {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out-cubic',
-      once: true,
-      offset: 60,
-      delay: 50
-    });
-  }
-
-  // 2. Sticky Navbar on Scroll
+  // 1. Sticky Navbar on Scroll
   const navbar = document.querySelector('.aiira-navbar');
   if (navbar) {
     window.addEventListener('scroll', function () {

@@ -16,10 +16,6 @@
         <div class="row align-items-center g-5">
             <!-- Left Hero Text -->
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
-                <div class="badge bg-brand-light text-brand-primary border px-3 py-2 rounded-pill fw-bold mb-3 pulse-badge">
-                    <i class="bi bi-patch-check-fill text-brand-secondary"></i> Direct Manufacturer &amp; Wholesale Supplier
-                </div>
-
                 <h1 class="hero-title">
                     Mastering The <span class="text-brand-primary">Ultimate Softness</span> In Every Pull.
                 </h1>
@@ -70,7 +66,6 @@
 <section class="py-5 bg-white border-bottom">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Precision Engineering</span>
             <h2 class="section-title">Anatomy of the Aiira Tissue Box</h2>
             <p class="section-subtitle">Because we specialize exclusively in facial tissue boxes, every detail is engineered to world-class standards.</p>
         </div>
@@ -129,7 +124,6 @@
 <section class="py-5 bg-brand-light">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Wholesale &amp; Retail Packs</span>
             <h2 class="section-title">Available Packaging Configurations</h2>
             <p class="section-subtitle">Choose from standard retail configurations or order bulk Master Cartons with custom private labeling.</p>
         </div>

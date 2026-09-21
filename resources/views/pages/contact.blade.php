@@ -10,9 +10,6 @@
 <section class="py-5 bg-brand-light border-bottom position-relative overflow-hidden">
     <div class="hero-orb hero-orb-1" style="opacity: 0.35;"></div>
     <div class="container py-4 text-center position-relative" style="z-index: 2;" data-aos="fade-down" data-aos-duration="800">
-        <span class="badge bg-white text-brand-primary border px-3 py-2 rounded-pill fw-bold mb-3 pulse-badge">
-            <i class="bi bi-headset text-brand-secondary"></i> Direct Plant Desk
-        </span>
         <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">Contact Our Manufacturing Desk</h1>
         <p class="section-subtitle">
             Order Master Cartons directly from the factory, apply for regional dealership, or request custom private label tissue box manufacturing.
@@ -103,7 +100,7 @@
                     <p class="text-muted mb-4">Fill out your order or dealership details for direct manufacturer rate quotes.</p>
 
                     @if ($errors->any())
-                        <div class="alert alert-danger rounded-3 mb-4" data-aos="shake">
+                        <div class="alert alert-danger rounded-3 mb-4">
                             <ul class="mb-0 small">
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
@@ -188,7 +185,6 @@
 <section class="py-5 bg-brand-light border-top">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Help &amp; Support</span>
             <h2 class="section-title">Frequently Asked Questions</h2>
             <p class="section-subtitle">Common queries from distributors, wholesale buyers, and hotel procurement managers.</p>
         </div>

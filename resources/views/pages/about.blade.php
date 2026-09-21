@@ -10,9 +10,6 @@
 <section class="py-5 bg-brand-light border-bottom position-relative overflow-hidden">
     <div class="hero-orb hero-orb-1" style="opacity: 0.35;"></div>
     <div class="container py-4 text-center position-relative" style="z-index: 2;" data-aos="fade-down" data-aos-duration="800">
-        <span class="badge bg-white text-brand-primary border px-3 py-2 rounded-pill fw-bold mb-3 pulse-badge">
-            <i class="bi bi-gear-wide-connected text-brand-secondary"></i> Direct Paper Converting Infrastructure
-        </span>
         <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">About Aiira Manufacturing</h1>
         <p class="section-subtitle">
             A state-of-the-art tissue paper manufacturing facility engineered specifically for world-class facial tissue boxes.
@@ -27,7 +24,6 @@
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
-                <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Our Core Mission</span>
                 <h2 class="section-title mb-3">Why We Chose to Master Only ONE Product</h2>
                 <p class="text-muted mb-3" style="line-height: 1.8;">
                     Most paper converting factories divide their attention across dozens of disparate products — from low-grade napkins to kitchen rolls and industrial wipers.
@@ -81,7 +77,6 @@
 <section class="py-5 bg-brand-light">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">From Pulp to Box</span>
             <h2 class="section-title">Our Touchless Automated Process</h2>
             <p class="section-subtitle">From jumbo raw reels of certified virgin pulp to the finished shrink-wrapped master cartons.</p>
         </div>
@@ -140,7 +135,6 @@
 <section id="certifications" class="py-5 bg-white">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Quality Assurance</span>
             <h2 class="section-title">Certifications &amp; Quality Lab Testing</h2>
             <p class="section-subtitle">Our in-house QA lab verifies every production batch against stringent physical and hygienic parameters.</p>
         </div>

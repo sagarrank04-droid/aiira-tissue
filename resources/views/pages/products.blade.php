@@ -12,9 +12,6 @@
     <div class="container py-4 position-relative" style="z-index: 2;">
         <div class="row align-items-center g-5">
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
-                <span class="badge bg-white text-brand-primary border px-3 py-2 rounded-pill fw-bold mb-3 pulse-badge">
-                    <i class="bi bi-box2-heart-fill text-brand-secondary"></i> Flagship Product Line
-                </span>
                 <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">Aiira Luxury Facial Tissue Box</h1>
                 <p class="section-subtitle ms-0 mb-4">
                     Our flagship facial tissue box is precision-crafted using 100% virgin wood pulp fibers, high-density 3-ply micro-cushioning, and interfolded V-fold technology for smooth, uninterrupted one-by-one dispensing.
@@ -45,7 +42,6 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Laboratory Standards</span>
             <h2 class="section-title">Technical Specifications</h2>
             <p class="section-subtitle">Verified parameters tested in our in-house ISO certified quality control laboratory.</p>
         </div>
@@ -116,7 +112,6 @@
 <section class="py-5 bg-brand-light">
     <div class="container py-4">
         <div class="text-center mb-5" data-aos="fade-up">
-            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Standard &amp; Custom Sizes</span>
             <h2 class="section-title">Packaging Sizes &amp; Configurations</h2>
             <p class="section-subtitle">We supply all configurations directly from our factory floor to distributors, retailers, and institutions.</p>
         </div>
@@ -161,7 +156,6 @@
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-7" data-aos="fade-right" data-aos-duration="900">
-                <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Private Labeling</span>
                 <h2 class="section-title mb-3">Custom Branded Tissue Boxes with Your Logo</h2>
                 <p class="text-muted mb-4" style="line-height: 1.8;">
                     Elevate your brand presence in luxury hotel guest rooms, corporate boardrooms, automobile service lounges, and hospital suites with custom printed Aiira tissue boxes.

@@ -20,6 +20,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
@@ -31,13 +33,13 @@
     <div class="bg-brand-primary text-white py-2 d-none d-md-block" style="font-size: 0.84rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-3">
-                <span><i class="bi bi-gear-wide-connected text-brand-secondary me-1"></i> Dedicated Tissue Box Manufacturing Facility</span>
+                <span class="anim-fade-in"><i class="bi bi-gear-wide-connected text-brand-secondary me-1"></i> Dedicated Tissue Box Manufacturing Facility</span>
                 <span>•</span>
-                <span><i class="bi bi-shield-check text-brand-secondary me-1"></i> 100% Virgin Wood Pulp • ECF Chlorine-Free</span>
+                <span class="anim-fade-in"><i class="bi bi-shield-check text-brand-secondary me-1"></i> 100% Virgin Wood Pulp • ECF Chlorine-Free</span>
             </div>
             <div class="d-flex align-items-center gap-4">
-                <a href="tel:+919876543210" class="text-white text-decoration-none"><i class="bi bi-telephone me-1 text-brand-secondary"></i> +91 98765 43210</a>
-                <a href="mailto:contact@aiiratissues.com" class="text-white text-decoration-none"><i class="bi bi-envelope me-1 text-brand-secondary"></i> contact@aiiratissues.com</a>
+                <a href="tel:+919876543210" class="text-white text-decoration-none top-link"><i class="bi bi-telephone me-1 text-brand-secondary"></i> +91 98765 43210</a>
+                <a href="mailto:contact@aiiratissues.com" class="text-white text-decoration-none top-link"><i class="bi bi-envelope me-1 text-brand-secondary"></i> contact@aiiratissues.com</a>
             </div>
         </div>
     </div>
@@ -70,7 +72,7 @@
                 </ul>
 
                 <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-                    <a href="{{ route('contact') }}" class="btn btn-aiira">
+                    <a href="{{ route('contact') }}" class="btn btn-aiira btn-shimmer">
                         <i class="bi bi-box-seam-fill"></i> Factory Direct Quote
                     </a>
                 </div>
@@ -80,7 +82,7 @@
 
     <!-- FLASH MESSAGES -->
     @if(session('success'))
-        <div class="container mt-4">
+        <div class="container mt-4" data-aos="fade-down">
             <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm rounded-4 p-3 d-flex align-items-center" role="alert">
                 <i class="bi bi-check-circle-fill fs-4 text-success me-3"></i>
                 <div class="flex-grow-1">
@@ -93,7 +95,7 @@
     @endif
 
     @if(session('newsletter_success'))
-        <div class="container mt-4">
+        <div class="container mt-4" data-aos="fade-down">
             <div class="alert alert-info alert-dismissible fade show border-0 shadow-sm rounded-4 p-3 d-flex align-items-center" role="alert">
                 <i class="bi bi-envelope-check-fill fs-4 text-primary me-3"></i>
                 <div class="flex-grow-1">
@@ -110,10 +112,24 @@
         @yield('content')
     </main>
 
+    <!-- FLOATING ACTIONS (WhatsApp & Scroll-to-Top) -->
+    <div class="floating-action-container">
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn" class="scroll-top-btn shadow-lg" aria-label="Scroll to top" title="Scroll to top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/919876543210?text=Hello%20Aiira%20Factory,%20I%20want%20to%20inquire%20about%20Facial%20Tissue%20Boxes" target="_blank" class="floating-whatsapp-btn shadow-lg" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+            <span class="whatsapp-pulse-ring"></span>
+            <span class="whatsapp-tooltip d-none d-md-inline">Direct Factory Desk</span>
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
     <!-- QUICK INQUIRY / SAMPLE REQUEST MODAL -->
     <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-4 border-0 shadow-lg overflow-hidden">
+            <div class="modal-content rounded-4 border-0 shadow-lg overflow-hidden modal-animated">
                 <div class="modal-header bg-brand-primary text-white border-0 p-4">
                     <div>
                         <h5 class="modal-title fw-bold text-white mb-1" id="inquiryModalLabel">Request Factory Direct Quotation</h5>
@@ -159,7 +175,7 @@
                             <label class="form-label">Delivery Location &amp; Requirements <span class="text-danger">*</span></label>
                             <textarea name="message" rows="3" class="form-control" placeholder="Please mention delivery city, delivery timeframe, or custom branding requirements..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-aiira w-100 justify-content-center py-3">
+                        <button type="submit" class="btn btn-aiira btn-shimmer w-100 justify-content-center py-3">
                             <i class="bi bi-send-fill"></i> Submit Quotation Request
                         </button>
                     </form>
@@ -173,7 +189,7 @@
         <div class="container">
             <div class="row g-4 g-lg-5 mb-4 mb-lg-5">
                 <!-- Col 1: Brand Info -->
-                <div class="col-12 col-lg-4 col-md-12">
+                <div class="col-12 col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="100">
                     <div class="footer-brand-wrap">
                         <img src="{{ asset('images/logo-white.svg') }}" alt="Aiira Logo" class="footer-logo-img" width="180" height="52">
                         <p class="text-white-50 pe-lg-4 mb-4" style="line-height: 1.7; font-size: 0.95rem;">
@@ -189,7 +205,7 @@
                 </div>
 
                 <!-- Col 2: Navigation Links (2-Column side-by-side on Mobile) -->
-                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="200">
                     <h5 class="footer-heading">Company</h5>
                     <ul class="footer-links">
                         <li><a href="{{ route('home') }}"><i class="bi bi-chevron-right small text-brand-secondary"></i> Home</a></li>
@@ -201,7 +217,7 @@
                 </div>
 
                 <!-- Col 3: Product Highlights (2-Column side-by-side on Mobile) -->
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                     <h5 class="footer-heading">Our Specialization</h5>
                     <ul class="footer-links">
                         <li><a href="{{ route('products') }}"><i class="bi bi-box2-heart text-brand-secondary"></i> 200 Pulls Luxury Box</a></li>
@@ -213,14 +229,14 @@
                 </div>
 
                 <!-- Col 4: Factory Direct Desk & Contact -->
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                     <h5 class="footer-heading">Factory Sales Desk</h5>
                     <p class="text-white-50 small mb-3">Direct manufacturer supply, distributor partnerships &amp; contract manufacturing.</p>
                     <form action="{{ route('newsletter.submit') }}" method="POST" class="mb-4">
                         @csrf
                         <div class="input-group">
                             <input type="email" name="email" class="form-control rounded-start-pill border-0 px-3 py-2" placeholder="Your email address" required>
-                            <button class="btn btn-aiira-secondary rounded-end-pill px-3" type="submit" aria-label="Subscribe">
+                            <button class="btn btn-aiira-secondary rounded-end-pill px-3 btn-shimmer" type="submit" aria-label="Subscribe">
                                 <i class="bi bi-arrow-right"></i>
                             </button>
                         </div>
@@ -258,6 +274,8 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="{{ asset('js/main.js') }}"></script>
     @yield('scripts')

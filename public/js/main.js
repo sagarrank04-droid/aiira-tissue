@@ -5,7 +5,18 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   
-  // 1. Sticky Navbar on Scroll
+  // 1. Initialize AOS (Animate On Scroll)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60,
+      delay: 50
+    });
+  }
+
+  // 2. Sticky Navbar on Scroll
   const navbar = document.querySelector('.aiira-navbar');
   if (navbar) {
     window.addEventListener('scroll', function () {
@@ -17,7 +28,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2. Product Catalog Filter
+  // 3. Scroll to Top Button
+  const scrollTopBtn = document.getElementById('scrollToTopBtn');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 350) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // 4. Product Catalog Filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const productCards = document.querySelectorAll('.product-item');
 
@@ -46,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Counter Animation for Statistics
+  // 5. Counter Animation for Statistics (Smooth easing)
   const counters = document.querySelectorAll('.stat-number');
   if (counters.length > 0) {
     const observer = new IntersectionObserver((entries, obs) => {
@@ -54,31 +84,34 @@ document.addEventListener('DOMContentLoaded', function () {
         if (entry.isIntersecting) {
           const counter = entry.target;
           const target = +counter.getAttribute('data-target');
-          const duration = 1500;
-          const stepTime = 20;
-          const totalSteps = duration / stepTime;
-          const stepValue = target / totalSteps;
-          let current = 0;
+          const suffix = counter.getAttribute('data-suffix') || '';
+          const duration = 1800; // ms
+          let startTimestamp = null;
 
-          const timer = setInterval(() => {
-            current += stepValue;
-            if (current >= target) {
-              counter.innerText = target.toLocaleString() + (counter.getAttribute('data-suffix') || '');
-              clearInterval(timer);
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            // Ease out cubic
+            const easeProgress = 1 - Math.pow(1 - progress, 3);
+            const current = Math.floor(easeProgress * target);
+            counter.innerText = current.toLocaleString() + suffix;
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
             } else {
-              counter.innerText = Math.floor(current).toLocaleString() + (counter.getAttribute('data-suffix') || '');
+              counter.innerText = target.toLocaleString() + suffix;
             }
-          }, stepTime);
+          };
 
+          window.requestAnimationFrame(step);
           obs.unobserve(counter);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
     counters.forEach(counter => observer.observe(counter));
   }
 
-  // 4. Quick Product Inquiry Modal Data Binder
+  // 6. Quick Product Inquiry Modal Data Binder
   const inquiryModal = document.getElementById('inquiryModal');
   if (inquiryModal) {
     inquiryModal.addEventListener('show.bs.modal', function (event) {
@@ -91,6 +124,22 @@ document.addEventListener('DOMContentLoaded', function () {
         if (modalProductInput) modalProductInput.value = productName;
         if (modalProductDisplay) modalProductDisplay.textContent = productName;
       }
+    });
+  }
+
+  // 7. Interactive Subtle Tilt on Hero Image (Desktop only)
+  const heroImage = document.querySelector('.hero-image-wrap img');
+  if (heroImage && window.innerWidth > 992) {
+    const heroWrap = document.querySelector('.hero-image-wrap');
+    heroWrap.addEventListener('mousemove', function (e) {
+      const rect = heroWrap.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      heroImage.style.transform = `perspective(1000px) rotateY(${x * 0.03}deg) rotateX(${-y * 0.03}deg) scale(1.03)`;
+    });
+
+    heroWrap.addEventListener('mouseleave', function () {
+      heroImage.style.transform = '';
     });
   }
 

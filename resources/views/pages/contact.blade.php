@@ -7,8 +7,12 @@
 <!-- =========================================================================
      PAGE HEADER BANNER
      ========================================================================= -->
-<section class="py-5 bg-brand-light border-bottom">
-    <div class="container py-4 text-center">
+<section class="py-5 bg-brand-light border-bottom position-relative overflow-hidden">
+    <div class="hero-orb hero-orb-1" style="opacity: 0.35;"></div>
+    <div class="container py-4 text-center position-relative" style="z-index: 2;" data-aos="fade-down" data-aos-duration="800">
+        <span class="badge bg-white text-brand-primary border px-3 py-2 rounded-pill fw-bold mb-3 pulse-badge">
+            <i class="bi bi-headset text-brand-secondary"></i> Direct Plant Desk
+        </span>
         <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">Contact Our Manufacturing Desk</h1>
         <p class="section-subtitle">
             Order Master Cartons directly from the factory, apply for regional dealership, or request custom private label tissue box manufacturing.
@@ -23,7 +27,7 @@
     <div class="container py-4">
         <div class="row g-5">
             <!-- Left: Factory & Contact Details Card -->
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
                 <div class="contact-info-card">
                     <h3 class="fw-bold text-white mb-2">Manufacturing Headquarters</h3>
                     <p class="text-white-50 mb-4">Connect directly with our factory sales and dispatch team.</p>
@@ -85,7 +89,7 @@
 
                     <div class="mt-4 pt-4 border-top border-white-50">
                         <span class="text-white-50 small d-block mb-2">Direct WhatsApp Factory Desk:</span>
-                        <a href="https://wa.me/919876543210?text=Hello%20Aiira%20Factory,%20I%20want%20to%20place%20a%20bulk%20order" target="_blank" class="btn btn-success w-100 py-2 d-flex align-items-center justify-content-center gap-2 fw-bold">
+                        <a href="https://wa.me/919876543210?text=Hello%20Aiira%20Factory,%20I%20want%20to%20place%20a%20bulk%20order" target="_blank" class="btn btn-success btn-shimmer w-100 py-2 d-flex align-items-center justify-content-center gap-2 fw-bold">
                             <i class="bi bi-whatsapp fs-5"></i> Chat on WhatsApp (Instant Reply)
                         </a>
                     </div>
@@ -93,13 +97,13 @@
             </div>
 
             <!-- Right: Quotation / Inquiry Form Card -->
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="900">
                 <div class="contact-form-card">
                     <h3 class="fw-bold text-brand-primary-dark mb-1">Request Factory Quotation</h3>
                     <p class="text-muted mb-4">Fill out your order or dealership details for direct manufacturer rate quotes.</p>
 
                     @if ($errors->any())
-                        <div class="alert alert-danger rounded-3 mb-4">
+                        <div class="alert alert-danger rounded-3 mb-4" data-aos="shake">
                             <ul class="mb-0 small">
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
@@ -166,7 +170,7 @@
                             </div>
 
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-aiira btn-lg w-100 justify-content-center py-3">
+                                <button type="submit" class="btn btn-aiira btn-shimmer btn-lg w-100 justify-content-center py-3">
                                     <i class="bi bi-send-fill"></i> Submit &amp; Receive Direct Factory Pricing
                                 </button>
                             </div>
@@ -183,12 +187,13 @@
      ========================================================================= -->
 <section class="py-5 bg-brand-light border-top">
     <div class="container py-4">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span class="text-brand-secondary fw-bold text-uppercase small letter-spacing-1 d-block mb-1">Help &amp; Support</span>
             <h2 class="section-title">Frequently Asked Questions</h2>
             <p class="section-subtitle">Common queries from distributors, wholesale buyers, and hotel procurement managers.</p>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-8">
                 <div class="accordion aiira-accordion" id="faqAccordion">
                     <!-- FAQ 1 -->

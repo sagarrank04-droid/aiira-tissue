@@ -11,7 +11,6 @@
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <span class="section-badge">Flagship Manufactured Product</span>
                 <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">Aiira Luxury Facial Tissue Box</h1>
                 <p class="section-subtitle ms-0 mb-4">
                     Our flagship facial tissue box is precision-crafted using 100% virgin wood pulp fibers, high-density 3-ply micro-cushioning, and interfolded V-fold technology for smooth, uninterrupted one-by-one dispensing.
@@ -29,7 +28,6 @@
 
             <div class="col-lg-6 text-center">
                 <div class="p-4 bg-white rounded-5 shadow-sm border position-relative">
-                    <span class="position-absolute top-0 start-0 bg-brand-primary text-white small fw-bold px-3 py-1 rounded-bottom-end-4 m-0">100% Virgin Pulp</span>
                     <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="Aiira Luxury Facial Tissue Box" class="img-fluid" style="max-height: 380px;">
                 </div>
             </div>
@@ -43,7 +41,6 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">Manufacturing Data Sheet</span>
             <h2 class="section-title">Technical Specifications</h2>
             <p class="section-subtitle">Verified parameters tested in our in-house ISO certified quality control laboratory.</p>
         </div>
@@ -62,7 +59,7 @@
                         <tbody>
                             <tr>
                                 <td class="py-3 px-4 fw-bold text-dark"><i class="bi bi-tree text-brand-secondary me-2"></i> Raw Material</td>
-                                <td class="py-3 px-4"><span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2">100% Virgin Wood Pulp</span></td>
+                                <td class="py-3 px-4 fw-semibold text-success">100% Virgin Wood Pulp</td>
                                 <td class="py-3 px-4 text-muted small">No recycled scrap; pure and hygienic for sensitive facial skin.</td>
                             </tr>
                             <tr>
@@ -114,7 +111,6 @@
 <section class="py-5 bg-brand-light">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">Order Configurations</span>
             <h2 class="section-title">Packaging Sizes &amp; Configurations</h2>
             <p class="section-subtitle">We supply all configurations directly from our factory floor to distributors, retailers, and institutions.</p>
         </div>
@@ -124,7 +120,6 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card h-100">
                         <div class="product-img-box">
-                            <span class="product-tag">{{ $variant['badge'] }}</span>
                             <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="{{ $variant['name'] }}" class="img-fluid">
                         </div>
                         <div class="product-body">
@@ -160,7 +155,6 @@
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-7">
-                <span class="section-badge">OEM &amp; Contract Manufacturing</span>
                 <h2 class="section-title mb-3">Custom Branded Tissue Boxes with Your Logo</h2>
                 <p class="text-muted mb-4" style="line-height: 1.8;">
                     Elevate your brand presence in luxury hotel guest rooms, corporate boardrooms, automobile service lounges, and hospital suites with custom printed Aiira tissue boxes.

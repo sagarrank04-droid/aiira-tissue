@@ -9,7 +9,6 @@
      ========================================================================= -->
 <section class="py-5 bg-brand-light border-bottom">
     <div class="container py-4 text-center">
-        <span class="section-badge">Direct From The Factory Floor</span>
         <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">Contact Our Manufacturing Desk</h1>
         <p class="section-subtitle">
             Order Master Cartons directly from the factory, apply for regional dealership, or request custom private label tissue box manufacturing.
@@ -185,7 +184,6 @@
 <section class="py-5 bg-brand-light border-top">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">Got Questions?</span>
             <h2 class="section-title">Frequently Asked Questions</h2>
             <p class="section-subtitle">Common queries from distributors, wholesale buyers, and hotel procurement managers.</p>
         </div>

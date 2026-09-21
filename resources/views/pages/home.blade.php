@@ -12,11 +12,6 @@
         <div class="row align-items-center g-5">
             <!-- Left Hero Text -->
             <div class="col-lg-6">
-                <div class="hero-badge">
-                    <span class="hero-badge-pill">Direct Manufacturer</span>
-                    <span>100% Pure Virgin Pulp Facial Tissues</span>
-                </div>
-
                 <h1 class="hero-title">
                     Mastering The <span class="text-brand-primary">Ultimate Softness</span> In Every Pull.
                 </h1>
@@ -67,7 +62,6 @@
 <section class="py-5 bg-white border-bottom">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">Crafted to Perfection</span>
             <h2 class="section-title">Anatomy of the Aiira Tissue Box</h2>
             <p class="section-subtitle">Because we specialize exclusively in facial tissue boxes, every detail is engineered to world-class standards.</p>
         </div>
@@ -126,7 +120,6 @@
 <section class="py-5 bg-brand-light">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">Packaging &amp; Order Options</span>
             <h2 class="section-title">Available Packaging Configurations</h2>
             <p class="section-subtitle">Choose from standard retail configurations or order bulk Master Cartons with custom private labeling.</p>
         </div>
@@ -136,7 +129,6 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card h-100">
                         <div class="product-img-box">
-                            <span class="product-tag">{{ $variant['badge'] }}</span>
                             <img src="{{ asset('images/products/facial-tissue-box.svg') }}" alt="{{ $variant['name'] }}" class="img-fluid">
                         </div>
                         <div class="product-body">
@@ -185,7 +177,6 @@
             </div>
 
             <div class="col-lg-6">
-                <span class="section-badge">Pure Specialization Advantage</span>
                 <h2 class="section-title">Why Single-Product Focus Delivers Unbeatable Quality &amp; Pricing</h2>
                 <p class="text-muted mb-4" style="line-height: 1.8;">
                     Unlike generalized paper converters who divide focus across dozens of products, <strong>Aiira dedicates 100% of its machinery, engineers, and supply chain to perfect one item: The Facial Tissue Box.</strong>
@@ -278,7 +269,6 @@
         <div class="p-5 rounded-5 bg-brand-primary text-white position-relative overflow-hidden shadow-lg">
             <div class="row align-items-center position-relative" style="z-index: 2;">
                 <div class="col-lg-8 mb-4 mb-lg-0">
-                    <span class="badge bg-white text-brand-primary px-3 py-2 rounded-pill fw-bold mb-3 text-uppercase">Direct Manufacturer Supply</span>
                     <h2 class="display-6 fw-bold text-white mb-3">Order Bulk Cartons or Request Free Samples</h2>
                     <p class="text-white-50 fs-6 mb-0 pe-lg-4">
                         Looking for wholesale distributorship or custom printed tissue boxes for your corporate brand? Speak directly with our production facility managers.

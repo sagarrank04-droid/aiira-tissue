@@ -9,7 +9,6 @@
      ========================================================================= -->
 <section class="py-5 bg-brand-light border-bottom position-relative">
     <div class="container py-4 text-center">
-        <span class="section-badge">Dedicated Paper Converting Plant</span>
         <h1 class="display-4 fw-bold text-brand-primary-dark mb-3">About Aiira Manufacturing</h1>
         <p class="section-subtitle">
             A state-of-the-art tissue paper manufacturing facility engineered specifically for world-class facial tissue boxes.
@@ -24,7 +23,6 @@
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <span class="section-badge">Our Manufacturing Philosophy</span>
                 <h2 class="section-title mb-3">Why We Chose to Master Only ONE Product</h2>
                 <p class="text-muted mb-3" style="line-height: 1.8;">
                     Most paper converting factories divide their attention across dozens of disparate products — from low-grade napkins to kitchen rolls and industrial wipers.
@@ -78,7 +76,6 @@
 <section class="py-5 bg-brand-light">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">How It's Made</span>
             <h2 class="section-title">Our Touchless Automated Process</h2>
             <p class="section-subtitle">From jumbo raw reels of certified virgin pulp to the finished shrink-wrapped master cartons.</p>
         </div>
@@ -90,7 +87,6 @@
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-disc"></i>
                     </div>
-                    <span class="badge bg-brand-primary text-white rounded-pill px-3 py-1 small mb-2">Step 01</span>
                     <h5 class="fw-bold mb-2">Jumbo Reel Unwinding</h5>
                     <p class="text-muted small mb-0">FSC certified 100% pure virgin wood pulp parent reels are unwound under computerized tension controls.</p>
                 </div>
@@ -102,7 +98,6 @@
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-layers"></i>
                     </div>
-                    <span class="badge bg-brand-primary text-white rounded-pill px-3 py-1 small mb-2">Step 02</span>
                     <h5 class="fw-bold mb-2">Micro-Cushion Embossing</h5>
                     <p class="text-muted small mb-0">3 separate tissue plies are bonded using steel-to-rubber micro embossing to lock in plush air pockets.</p>
                 </div>
@@ -114,7 +109,6 @@
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-arrows-vertical"></i>
                     </div>
-                    <span class="badge bg-brand-primary text-white rounded-pill px-3 py-1 small mb-2">Step 03</span>
                     <h5 class="fw-bold mb-2">V-Fold Interleaving</h5>
                     <p class="text-muted small mb-0">High-speed rotary folding interlaces sheets in a vacuum chamber, creating the signature pop-up one-pull mechanism.</p>
                 </div>
@@ -126,7 +120,6 @@
                     <div class="feature-icon-wrap mx-auto">
                         <i class="bi bi-box-seam"></i>
                     </div>
-                    <span class="badge bg-brand-primary text-white rounded-pill px-3 py-1 small mb-2">Step 04</span>
                     <h5 class="fw-bold mb-2">Touchless Box Cartoning</h5>
                     <p class="text-muted small mb-0">Robotic arms insert counted tissue stacks into rigid boxes, hot-melt seal the flaps, and pack into master cartons.</p>
                 </div>
@@ -141,7 +134,6 @@
 <section id="certifications" class="py-5 bg-white">
     <div class="container py-4">
         <div class="text-center mb-5">
-            <span class="section-badge">Quality Standards &amp; Testing</span>
             <h2 class="section-title">Certifications &amp; Quality Lab Testing</h2>
             <p class="section-subtitle">Our in-house QA lab verifies every production batch against stringent physical and hygienic parameters.</p>
         </div>

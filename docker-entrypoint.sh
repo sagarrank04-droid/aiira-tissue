@@ -1,10 +1,14 @@
 #!/bin/sh
 set -e
 
-# Ensure SQLite file exists
-if [ ! -f /var/www/html/database/database.sqlite ]; then
-    touch /var/www/html/database/database.sqlite
+# Copy .env.example to .env
+if [ ! -f /var/www/html/.env ]; then
+    cp /var/www/html/.env.example /var/www/html/.env
 fi
+
+# Ensure SQLite file exists
+mkdir -p /var/www/html/database
+touch /var/www/html/database/database.sqlite
 
 # Ensure storage directories exist
 mkdir -p /var/www/html/storage/framework/sessions \
@@ -17,13 +21,12 @@ mkdir -p /var/www/html/storage/framework/sessions \
 chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database
 chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database
 
-# If APP_KEY is not set in environment, generate one or set fallback
-if [ -z "$APP_KEY" ]; then
-    export APP_KEY="base64:AfCohnQ8AOmRiFImh9dy9CZoW5WbmaOpogGS+bHqpf4="
-fi
+# Run migrations
+php artisan migrate --force --no-interaction || true
 
-# Cache routes and views
+# Clear & Cache config
 php artisan config:clear || true
 php artisan view:clear || true
+php artisan route:clear || true
 
 exec apache2-foreground

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <filter id="bamShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#2d3d20" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="#f8fbf5" rx="20"/>
+  <circle cx="250" cy="210" r="140" fill="#e9f3df" />
+  <ellipse cx="250" cy="330" rx="160" ry="20" fill="#2d3d20" opacity="0.15" />
+
+  <!-- Natural Bamboo Kraft Tissue Box -->
+  <g transform="translate(110, 120)" filter="url(#bamShadow)">
+    <!-- Emerging Unbleached Soft Tissue Sheet -->
+    <path d="M110,60 C90,10 140,-30 180,-20 C220,-10 240,40 210,70 Z" fill="#f5ede0" stroke="#dfceb6" stroke-width="1.5"/>
+
+    <!-- Kraft Box 3D -->
+    <path d="M 0,60 L 140,20 L 280,60 L 140,100 Z" fill="#d8be9b" stroke="#ffffff" stroke-width="1"/>
+    <ellipse cx="140" cy="60" rx="55" ry="14" fill="#695133"/>
+
+    <path d="M 0,60 L 140,100 L 140,180 L 0,140 Z" fill="#c4a57b"/>
+    <path d="M 140,100 L 280,60 L 280,140 L 140,180 Z" fill="#b08f62"/>
+
+    <!-- Eco Bamboo Leaf Badge -->
+    <g transform="translate(40, 115) skewY(16)">
+      <text x="0" y="0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#2f4a21">Aiira Eco</text>
+      <text x="0" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="7.5" fill="#4d6f3a">100% UNBLEACHED BAMBOO</text>
+      <text x="0" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" fill="#3b2b18">Zero Plastic • Tree-Free • Compostable</text>
+    </g>
+  </g>
+</svg>
